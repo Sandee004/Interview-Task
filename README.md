@@ -1,6 +1,6 @@
 ## To run
 
-<li> Clone on local machine: git clone "url"</li>
+<li> Clone on local machine: git clone https://github.com/Sandee004/Interview-Task </li>
 <li>Go into the directory: cd task</li>
 <li>Install dependencies: npm install</li>
 <li>Run: npm run dev</li>
