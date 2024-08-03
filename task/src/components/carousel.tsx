@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
+//import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Navbar from "./navbar";
@@ -56,7 +56,6 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItems }) => {
                 navigation={false}
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
-                // onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
                 className="w-[98%] sm:w-[70%] h-[500px] mt-8">
                 {carouselItems.map((item: CarouselItem) => (
