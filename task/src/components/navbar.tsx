@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -11,17 +12,22 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="bg-blue-400 px-5 py-2 flex flex-row justify-between items-center sm:px-8 w-full">
+            <div className="bg-blue-400 px-5 py-2 flex flex-row justify-between items-center md:px-8 w-full">
                 <p className="text-2xl font-bold text-white">Muse Space</p>
 
-                <div className="hidden px-5 py-1 w-2/5 sm:flex flex-row justify-between items-center gap-5 font-sm text-white italic">
-                    <a>Home</a>
+                <div className="hidden px-5 py-1 w-2/5 md:flex flex-row justify-between items-center gap-5 font-sm text-white italic">
+                    <a>
+                        <Link to="/">Home</Link>
+                    </a>
                     <a>About</a>
                     <a>Featured</a>
-                    <input placeholder="Search" />
+                    <input
+                        className="bg-transparent px-5 w-[280px] border-blue-200 border py-1 text-black italic rounded-sm focus:outline-blue-200"
+                        placeholder="Search"
+                    />
                 </div>
 
-                <button className="sm:hidden">
+                <button className="md:hidden">
                     <FontAwesomeIcon
                         icon={faBars}
                         className="text-white text-xl"
@@ -30,10 +36,12 @@ const Navbar = () => {
                 </button>
             </div>
             <div
-                className={`bg-slate-300 flex flex-col pl-8 py-4 ${
+                className={`bg-gray-300 flex flex-col pl-8 py-4 ${
                     menuOpen ? "block" : "hidden"
                 }`}>
-                <a>Home</a>
+                <a>
+                    <Link to="/">Home</Link>
+                </a>
                 <a>About</a>
                 <a>Featured</a>
             </div>

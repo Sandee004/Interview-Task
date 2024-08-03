@@ -5,4 +5,5 @@
 <li>Install dependencies: npm install</li>
 <li>Run: npm run dev</li>
 
-Best viewed on phone resolution
+<br>
+<p>Each carousel's title leads to the detailed page for the specific listing</p>
