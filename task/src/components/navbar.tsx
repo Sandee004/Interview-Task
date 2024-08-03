@@ -36,14 +36,14 @@ const Navbar = () => {
                 </button>
             </div>
             <div
-                className={`bg-gray-300 flex flex-col pl-8 py-4 ${
+                className={`bg-gray-300 flex flex-col pl-8 py-5 ${
                     menuOpen ? "block" : "hidden"
                 }`}>
-                <a>
+                <a className="py-3">
                     <Link to="/">Home</Link>
                 </a>
-                <a>About</a>
-                <a>Featured</a>
+                <a className="py-3">About</a>
+                <a className="py-3">Featured</a>
             </div>
         </>
     );

@@ -58,7 +58,7 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItems }) => {
                 scrollbar={{ draggable: true }}
                 // onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
-                className="w-[70%] h-[500px] mt-8">
+                className="w-[98%] sm:w-[70%] h-[500px] mt-8">
                 {carouselItems.map((item: CarouselItem) => (
                     <SwiperSlide className="border justify-center items-center flex flex-col mx-auto px-10">
                         <div className="relative w-full">

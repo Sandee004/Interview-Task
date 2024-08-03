@@ -50,7 +50,7 @@ const DetailsPage: React.FC<DetailsPageProps> = ({ carouselItems }) => {
                         commodo consequat. Sources and related content
                     </p>
                     <p>{productDetails.facilities}</p>
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4">
                         <p className="text-white font-bold bg-blue-600 px-2 py-1 w-fit">
                             {productDetails.catch}
                         </p>
@@ -59,7 +59,7 @@ const DetailsPage: React.FC<DetailsPageProps> = ({ carouselItems }) => {
                         </p>
                     </div>
                 </div>
-                <div className="justify-between gap-3 flex flex-col">
+                <div className="justify-between items-center gap-3 flex flex-col">
                     <p className="text-orange-500 text-xl font-bold">
                         {productDetails.price}
                     </p>
